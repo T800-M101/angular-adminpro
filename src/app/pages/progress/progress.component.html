@@ -1,1 +1,69 @@
-<p>progress works!</p>
+    <div class="row">
+        <div class="col-12">
+            <!-- Card Progress Bar -->
+            <div class="card">
+                  <div class="card-body">
+                          <h4 class="card-title">Striped Progress bar </h4>
+
+                        <!-- Progress Bar 1 -->
+                        <div class="progress m-t-20">
+                            <div class="progress-bar bg-primary progress-bar-striped active"
+                                 style="height:5px;"
+                                 role="progressbar"
+                                 [style.width]="porcentaje1">
+                           </div>
+                       </div>
+                      <!-- Fin Progress Bar 1 -->
+
+
+                      <!--Progress Bar 2 -->
+                      <div class="progress m-t-20">
+                            <div class="progress-bar bg-info progress-bar-striped active"
+                                 style="height:5px;"
+                                 role="progressbar"
+                                 [style.width]="porcentaje2">
+                           </div>
+                      </div>
+                    <!--Fin Progress Bar 2 -->
+                  </div>
+            </div>
+            <!-- Fin Card Progress Bar -->
+        </div>
+  </div>
+
+
+  <div class="row">
+        <!-- Incrementador 1 -->
+          <div class="col-6">
+            <div class="card">
+              <div class="card-body">
+                  <app-incrementador (valorSalida)="progresoPadre1 = $event"
+                                     [progresoHijo]="progresoPadre1">
+                  </app-incrementador>
+                </div>
+            </div>
+          </div>
+      <!-- Fin Incrementador 1 -->
+
+
+      <!--Incrementador 2 -->
+          <div class="col-6">
+              <div class="card">
+                <div class="card-body">
+                  <app-incrementador (valorSalida)="progresoPadre2 = $event"
+                                     [progresoHijo]="progresoPadre2"
+                                     [btnClass]="'btn-info'">
+                  </app-incrementador>
+                </div>
+              </div>
+          </div>
+      <!--Fin Incrementador 2 -->
+ </div>
+
+
+
+
+
+
+
+
