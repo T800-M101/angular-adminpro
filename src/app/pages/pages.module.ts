@@ -12,6 +12,10 @@ import { ProgressComponent } from './progress/progress.component';
 import { Grafica1Component } from './grafica1/grafica1.component';
 import { PagesComponent } from './pages.component';
 import { AccoutSettingsComponent } from './accout-settings/accout-settings.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
+
+
 
 
 
@@ -21,7 +25,9 @@ import { AccoutSettingsComponent } from './accout-settings/accout-settings.compo
     ProgressComponent,
     Grafica1Component,
     PagesComponent,
-    AccoutSettingsComponent
+    AccoutSettingsComponent,
+    PromesasComponent,
+    RxjsComponent
   ],
   imports: [
     CommonModule,
@@ -36,7 +42,10 @@ import { AccoutSettingsComponent } from './accout-settings/accout-settings.compo
     ProgressComponent,
     Grafica1Component,
     PagesComponent,
-    AccoutSettingsComponent
+    AccoutSettingsComponent,
+    PromesasComponent,
+    RxjsComponent
+
   ]
 })
 export class PagesModule { }
